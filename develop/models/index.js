@@ -14,6 +14,10 @@ User.hasMany(Comment, {
   foreignKey: 'user_id'
 });
 
+Event.hasMany(Comment, {
+  foreignKey: 'event_id'
+});
+
 Comment.belongsTo(User, {
   foreignKey: 'user_id'
 });
