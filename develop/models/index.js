@@ -23,11 +23,6 @@ Comment.belongsTo(User, {
   foreignKey: 'user_id'
 });
 
-Event.hasOne(Source, {
-  foreignKey: 'source_id',
-  onDelete: 'CASCADE'
-});
-
 Source.hasMany(Event, {
   foreignKey: 'source_id'
 });
