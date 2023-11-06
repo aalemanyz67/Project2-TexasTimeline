@@ -19,9 +19,13 @@ Event.init(
       type: DataTypes.DATE,
       allowNull: false,
     },
-    source: {
-      type: DataTypes.STRING,
-      allowNull: false
+    source_id: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+      references: {
+        model: 'source',
+        key: 'id'
+      }
     },
     content: {
       type: DataTypes.TEXT,
