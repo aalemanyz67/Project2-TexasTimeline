@@ -19,6 +19,10 @@ Event.init(
       type: DataTypes.DATE,
       allowNull: false,
     },
+    end_date: {
+      type: DataTypes.DATE,
+      allowNull: true
+    },
     source_id: {
       type: DataTypes.INTEGER,
       allowNull: false,
