@@ -11,19 +11,19 @@ Event.init(
       primaryKey: true,
       autoIncrement: true
     },
-    title: {
+    title: { // Title of an event
       type: DataTypes.STRING,
       allowNull: false
     },
-    date: {
+    date: { // Date of an event
       type: DataTypes.DATE,
       allowNull: false,
     },
-    end_date: {
+    end_date: { // End date of an event
       type: DataTypes.DATE,
       allowNull: true
     },
-    source_id: {
+    source_id: { // Source of an event
       type: DataTypes.INTEGER,
       allowNull: false,
       references: {
@@ -31,15 +31,15 @@ Event.init(
         key: 'id'
       }
     },
-    content: {
+    content: { // Content of an event
       type: DataTypes.TEXT,
       allowNull: false
     },
-    thumbnail: {
+    thumbnail: { // Thumbnail of an event
       type: DataTypes.TEXT,
       allowNull: true
     },
-    author_id: {
+    author_id: { // Who authored the event
       type: DataTypes.INTEGER,
       allowNull: false,
       references: {
