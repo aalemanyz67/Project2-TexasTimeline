@@ -11,23 +11,35 @@ Event.init(
       primaryKey: true,
       autoIncrement: true
     },
-    title: {
+    title: { // Title of an event
       type: DataTypes.STRING,
       allowNull: false
     },
-    date: {
+    date: { // Date of an event
       type: DataTypes.DATE,
       allowNull: false,
     },
-    source: {
-      type: DataTypes.STRING,
-      allowNull: false
+    end_date: { // End date of an event
+      type: DataTypes.DATE,
+      allowNull: true
     },
-    content: {
+    source_id: { // Source of an event
+      type: DataTypes.INTEGER,
+      allowNull: false,
+      references: {
+        model: 'source',
+        key: 'id'
+      }
+    },
+    content: { // Content of an event
       type: DataTypes.TEXT,
-      allowNull: false
+      allowNull: true
     },
-    author_id: {
+    thumbnail: { // Thumbnail of an event
+      type: DataTypes.TEXT,
+      allowNull: true
+    },
+    author_id: { // Who authored the event
       type: DataTypes.INTEGER,
       allowNull: false,
       references: {
