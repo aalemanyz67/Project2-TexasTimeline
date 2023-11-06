@@ -33,7 +33,7 @@ Event.init(
     },
     content: { // Content of an event
       type: DataTypes.TEXT,
-      allowNull: false
+      allowNull: true
     },
     thumbnail: { // Thumbnail of an event
       type: DataTypes.TEXT,
