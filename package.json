@@ -23,7 +23,7 @@
     "sequelize": "^6.34.0"
   },
   "devDependencies": {
-    "inquirer": "^9.2.11",
+    "inquirer": "^8.2.6",
     "loading-cli": "^1.1.1"
   }
 }
