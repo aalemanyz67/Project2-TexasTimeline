@@ -12,9 +12,15 @@ function welcomeUser() {
 }
 
 async function syncDatabase() {
-  const load = loading("Syncing to database").start();
-  await sequelize.sync({ force: true });
-  load.stop();
+  try {
+    const load = loading("Syncing to database").start();
+    await sequelize.sync({ force: true });
+    load.stop();
+  } catch(err) {
+    console.error("Error syncing database");
+    console.log(err);
+    process.exit(1);
+  }
 }
 
 async function seedDatabase() {
