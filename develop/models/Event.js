@@ -35,6 +35,10 @@ Event.init(
       type: DataTypes.TEXT,
       allowNull: false
     },
+    thumbnail: {
+      type: DataTypes.TEXT,
+      allowNull: true
+    },
     author_id: {
       type: DataTypes.INTEGER,
       allowNull: false,
