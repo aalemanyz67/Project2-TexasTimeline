@@ -4,7 +4,8 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "node server.js",
+    "seed": "node develop/seeds/index.js"
   },
   "author": "",
   "license": "MIT",
@@ -20,5 +21,9 @@
     "handlebars": "^4.7.6",
     "mysql2": "^3.6.3",
     "sequelize": "^6.34.0"
+  },
+  "devDependencies": {
+    "inquirer": "^9.2.11",
+    "loading-cli": "^1.1.1"
   }
 }
