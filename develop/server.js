@@ -1,37 +1,19 @@
 const express = require('express');
-const mysql = require('mysql2');
-const path = require('path');
+const routes = require('./routes');
+// import sequelize connection
 
-const PORT = process.env.PORT || 3001;
+const sequelize = require('./config/connection');
+
 const app = express();
+const PORT = process.env.PORT || 3001;
 
-// Express middleware
-app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 
-// Connect to database
-const db = mysql.createConnection(
-  {
-    host: 'localhost',
-    // MySQL username,
-    user: 'root',
-    // MySQL password
-    password: '',
-    database: 'classlist_db'
-  },
-  console.log(`Connected to the txTimeline_db database.`)
-);
+app.use(routes);
 
-// Query database
-db.query('SELECT * FROM <___>', function (err, results) {
-  console.log(results);
-});
-
-// Default response for any other request (Not Found)
-app.use((req, res) => {
-  res.status(404).end();
-});
-
-app.listen(PORT, () => {
-  console.log(`Server running on port ${PORT}`);
-});
+// sync sequelize models to the database, then turn on the server
+sequelize.sync({ force: false }).then(() => {
+  app.listen(PORT, () => {
+    console.log(`App listening on port ${PORT}!`);
+  })});
