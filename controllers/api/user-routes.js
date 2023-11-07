@@ -1,5 +1,7 @@
 const router = require('express').Router();
-const { User } = require('../../develop/models');
+const { User } = require('../../models');
+
+const withAuth = require('../utils/auth');
 
 router.get('/', (req, res) => {
   User.findAll()
@@ -26,7 +28,7 @@ router.get('/:id', (req, res) => {
     });
 });
 // CREATE a user
-router.post('/', async (req, res) => {
+router.post('/', withAuth, (req, res) => {
   User.create({ username: req.body.username, password: req.body.password, is_admin: req.body.admin })
     .then((user) => res.status(200).json(user))
     .catch((err) => {
@@ -36,7 +38,7 @@ router.post('/', async (req, res) => {
 });
 
 // DELETE a user
-router.delete('/:id', (req, res) => {
+router.delete('/:id', withAuth, (req, res) => {
   User.destroy({
       where: {
           id: req.params.id
