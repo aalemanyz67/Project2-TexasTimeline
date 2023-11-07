@@ -28,7 +28,7 @@ router.get('/:id', (req, res) => {
     });
 });
 // CREATE a user
-router.post('/', withAuth, (req, res) => {
+router.post('/', (req, res) => {
   User.create({ username: req.body.username, password: req.body.password, is_admin: req.body.admin })
     .then((user) => res.status(200).json(user))
     .catch((err) => {
