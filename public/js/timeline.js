@@ -1,8 +1,8 @@
 function initializeTimeline() {
-    var googleSheetURL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vSyVRqfse16715R8fj09rH40ij6PAbcZChVU2rhXPisyOaPGTfnIGttkxORJacY7jG37sPxWgkdIiEP/pubhtml?gid=0&single=true";
+    var googleSheetURL = "<iframe src='https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=1D0m893M2wtgmfm8nNHBSESY4TxrtO7VvW-DHs345wSA&font=Default&lang=en&initial_zoom=2&height=650' width='100%' height='650' webkitallowfullscreen mozallowfullscreen allowfullscreen frameborder='0'></iframe>";
     var options = {
         width: "100%",
-        height: "600",
+        height: "650",
         source: googleSheetURL,
         start_at_end: false,
     };
