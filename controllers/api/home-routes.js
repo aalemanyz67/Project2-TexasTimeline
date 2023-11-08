@@ -10,7 +10,7 @@ router.get('/', withAuth, async (req, res) => {
 
             {
               model: Source,
-              attributes: ['title', 'content']
+              as: 'source'
             }
           ],
          });  
