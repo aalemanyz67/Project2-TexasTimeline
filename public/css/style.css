@@ -1,7 +1,7 @@
 :root {
-  --primary: #3d5852;
-  --secondary: #86938f;
-  --tertiary: #5e877f;
+  --primary: #080909;
+  --secondary: #812304;
+  --tertiary: #cc5500;
   --quatrinary: #6c6b67;
   --light: #e3e4e3;
   --dark: #182c23;
@@ -25,7 +25,7 @@ a {
 }
 
 a:visited {
-  color: inherit;
+  color: white;
 }
 
 header {
@@ -33,6 +33,8 @@ header {
   text-align: center;
   background: var(--primary);
   color: var(--light);
+  
+  
 }
 
 main {
@@ -47,6 +49,8 @@ aside {
   padding: 80px;
   text-align: left;
   color: var(--light);
+  
+  
 }
 
 nav {
@@ -63,7 +67,7 @@ nav a {
 
 nav a:hover {
   color: var(--secondary);
-  background-color: var(--dark);
+  background-color: lightskyblue;
 }
 
 .gallery {
@@ -81,10 +85,12 @@ nav a:hover {
   border: none;
   padding: 0;
   cursor: pointer;
-  text-decoration: none;
+  
   font-size: 100%;
   transition: color 0.1s;
   margin-left: 16px;
+  color: white;
+  
 }
 
 img {
@@ -124,7 +130,7 @@ img {
   border-radius: var(--border-radius);
   border-style: double;
   border-width: thick;
-  background-color: #577a7c;
+  background-color: rgb(108, 143, 204);
   color: var(--light);
 }
 

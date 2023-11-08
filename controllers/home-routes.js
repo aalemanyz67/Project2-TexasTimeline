@@ -1,11 +1,11 @@
 const router = require('express').Router();
 const {Event, Source} = require('../models');
-//const withAuth = require('../utils/auth');
+const withAuth = require('../utils/auth');
 
-router.get('/', async (req, res) => {
+router.get('/', withAuth, async (req, res) => {
     try {
 
-        const dbEventData = await Event.findAll({
+        const dbEventData = await  Event.findAll({
           include: [
 
             {
