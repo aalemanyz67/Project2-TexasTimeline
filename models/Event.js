@@ -12,7 +12,7 @@ Event.init(
       autoIncrement: true
     },
     title: { // Title of an event
-      type: DataTypes.STRING,
+      type: DataTypes.TEXT,
       allowNull: false
     },
     date: { // Date of an event

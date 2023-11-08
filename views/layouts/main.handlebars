@@ -5,17 +5,20 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Texas Timeline</title>
-  <link rel="stylesheet" type="text/css" href="/public/css/style.css">
+  <link rel="stylesheet" type="text/css" href="/css/jass.css">
+  <link rel="stylesheet" type="text/css" href="/css/style.css">
 </head>
 
 <body>
   <header>
+    <img width="150" height="150" src="https://img.icons8.com/stickers/100/texas-flag.png" alt="texas-flag"/>
     <h1>Explore Texas History</h1>
+    
   </header>
   <nav>
     <a href="/">Home</a>
     {{#if loggedIn}}
-    <button id="logout" class="btn-no-style">Logout</button>
+    <button id="logout" class="btn-no-style ">Logout</button>
     {{else}}
     <a href="/public/js/login.js">Login</a>
     {{/if}}
@@ -24,14 +27,14 @@
     <aside>
       <h2>"You may all go to hell, and I will go to Texas" --Davy Crockett</h2>
     </aside>
-    <div class="Timeline">
+    <div class="timeline">
       {{{body}}}
     </div>
   </main>
   {{#if loggedIn}}
   <script src="/public/js/logout.js"></script>
   {{/if}}
-  {{> footer}}
+  {{footer}}
 </body>
 
 </html>

@@ -1,7 +1,7 @@
 const router = require('express').Router();
-const { User } = require('../../develop/models');
+const { User } = require('../../models');
 
-const withAuth = require('../../develop/utils/auth');
+const withAuth = require('../../utils/auth');
 
 router.get('/', withAuth, (req, res) => {
   User.findAll()
@@ -30,63 +30,62 @@ router.get('/:id', withAuth, (req, res) => {
 // CREATE a user
 router.post('/', (req, res) => {
   User.create({ username: req.body.username, password: req.body.password, is_admin: req.body.admin })
-    .then((user) => {
-      req.session.save(() => {
-        req.session.loggedIn = true;
-        res.status(200).json(user)
-      })
-
-        .catch((err) => {
-          console.log(err);
-          res.status(400).json(err);
-        });
-    });
+  .then((user) => {
+    req.session.save(() => {
+      req.session.loggedIn = true;
+      res.status(200).json(user)
+    })
+      .catch((err) => {
+        console.log(err);
+        res.status(400).json(err);
+      });
+  });
 });
 
 // Login
 // Login
 router.post('/login', (req, res) => {
-  User.findOne({
-    where: {
-      username: req.body.username,
-    },
-  })
-  .then((dbUserData) => {
-    if (!dbUserData) {
-      res
-        .status(400)
-        .json({ message: 'Incorrect username or password. Please try again!' });
-      return;
-    }
+User.findOne({
+  where: {
+    username: req.body.username,
+  },
+})
+.then((dbUserData) => {
+  if (!dbUserData) {
+    res
+      .status(400)
+      .json({ message: 'Incorrect username or password. Please try again!' });
+    return;
+  }
 
-    const validPassword = dbUserData.checkPassword(req.body.password);
+  const validPassword = dbUserData.checkPassword(req.body.password);
 
-    if (!validPassword) {
-      res
-        .status(400)
-        .json({ message: 'Incorrect username or password. Please try again!' });
-      return;
-    }
+  if (!validPassword) {
+    res
+      .status(400)
+      .json({ message: 'Incorrect username or password. Please try again!' });
+    return;
+  }
 
-    req.session.save(() => {
-      req.session.loggedIn = true;
-      res
-        .status(200)
-        .json({ user: dbUserData, message: 'You are now logged in!' });
-    });
-  })
-  .catch((err) => {
-    console.log(err);
-    res.status(500).json(err);
+  req.session.save(() => {
+    req.session.loggedIn = true;
+    res
+      .status(200)
+      .json({ user: dbUserData, message: 'You are now logged in!' });
   });
+})
+.catch((err) => {
+  console.log(err);
+  res.status(500).json(err);
+});
 });
 
 
 // Logout
 router.post('/logout', (req, res) => {
-  if (req.session.loggedIn) {
-    req.session.destroy(() => {
-      res.status(204).end();
+if (req.session.loggedIn) {
+  req.session.destroy(() => {
+    res.status(204).end();
     });
   } else {
     res.status(404).end();

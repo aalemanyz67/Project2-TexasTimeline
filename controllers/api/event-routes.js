@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { Event, Source } = require('../../develop/models');
+const { Event, Source } = require('../../models');
 
 
 

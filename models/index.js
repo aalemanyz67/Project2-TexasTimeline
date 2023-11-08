@@ -1,7 +1,7 @@
 const User = require('./User');
 const Event = require('./Event');
 const Comment = require('./Comment');
-const Source = require('./Source');
+const Source = require('./source');
 
 User.hasMany(Event, {
   foreignKey: 'author_id',
