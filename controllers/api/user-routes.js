@@ -1,7 +1,7 @@
 const router = require('express').Router();
-const { User } = require('../../models');
+const { User } = require('../../develop/models');
 
-const withAuth = require('../utils/auth');
+const withAuth = require('../../develop/utils/auth');
 
 router.get('/', (req, res) => {
   User.findAll()
