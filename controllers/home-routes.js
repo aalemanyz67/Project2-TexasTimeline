@@ -1,0 +1,41 @@
+const router = require('express').Router();
+const {Event, Source} = require('../models');
+const withAuth = require('../utils/auth');
+
+router.get('/', async (req, res) => {
+    try {
+
+        const eventData = await Event.findAll({
+          include: [
+
+            {
+              model: Source,
+              attributes: ['title', 'content']
+            }
+          ]
+         });  
+
+         const events = eventData.map((event) =>
+          event.get({plain: true})
+
+         );
+      res.render('homepage', {
+        events,
+        loggedIn: req.session.loggedIn
+      
+      });
+    } catch (err) {
+      console.log(err);
+      res.status(500).json(err);
+    }
+  });
+  router.get('/login', (req, res) => {
+    if (req.session.loggedIn) {
+      res.redirect('/');
+      return;
+    }
+  
+    res.render('login');
+  });
+  
+  module.exports = router ;
