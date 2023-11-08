@@ -1,131 +1,375 @@
 {
-    "sources": [
-      {
-        "id": 1,
-        "name": "TexasProud.com",
-        "url": "https://texasproud.com/the-10-most-significant-events-in-texas-history/"
-      }
-    ],
-    "events": [
-      {
-        "title": "Texas coastline first explored and mapped by Alonso Alvarez de Pineda.",
-        "date": "1519-01-01",
-        "content": null,
-        "source_id": 1
-      },
-      {
-        "title": "Stephen F. Austin received grant from the Mexican government to colonize Texas along the Brazos River.",
-        "date": "1823-01-01",
-        "content": null,
-        "source_id": 1
-      },
-      {
-        "title": "Convention of 1832 to discuss dissatisfaction with the policies by the Mexican government.",
-        "date": "1832-10-01",
-        "content": null,
-        "source_id": 1
-      },
-      {
-        "title": "The Texas revolution began with the Battle of Gonzales",
-        "date": "1835-10-01",
-        "content": null,
-        "source_id": 1
-      },
-      {
-        "title": "The Grass Fight near San Antonio was won by the Texans under Jim Bowie and Ed Burleson. Instead of silver, however, the Texans gained a worthless bounty of grass.",
-        "date": "1835-11-08",
-        "content": null,
-        "source_id": 1
-      },
-      {
-        "title": "The Texas Declaration of Independence signed by members of the Convention of 1836",
-        "date": "1836-03-01",
-        "content": null,
-        "source_id": 1
-      },
-      {
-        "title": "Texans under Col. William B. Travis were overwhelmed by the Mexican army after a two-week siege at the Battle of the Alamo in San Antonio. The Runaway Scrape began.",
-        "date": "1836-03-06",
-        "content": null,
-        "source_id": 1
-      },
-      {
-        "title": "Sam Houston abandoned Gonzales in a general retreat eastward to avoid the invading Mexican army.",
-        "date": "1836-03-10",
-        "content": null,
-        "source_id": 1
-      },
-      {
-        "title": "In what may be the most important event in Texas history, Texans under Sam Houston routed the Mexican forces of Santa Anna at the Battle of San Jacinto. Thus, independence was won in one of the most decisive battles in history.",
-        "date": "1836-04-21",
-        "content": null,
-        "source_id": 1
-      },
-      {
-        "title": "The Texas Congress first met in Austin, the frontier site selected for the capital of the Republic.",
-        "date": "1839-11-01",
-        "content": null,
-        "source_id": 1
-      },
-      {
-        "title": "U. S. President James Polk followed through on a campaign platform promising to annex Texas and signed legislation making Texas the 28th state of the United States.",
-        "date": "1845-12-29",
-        "content": null,
-        "source_id": 1
-      },
-      {
-        "title": "Texas seceded from the Federal Union following a 171 to 6 vote by the Secession Convention. Governor Sam Houston was one of a small minority opposed to secession.",
-        "date": "1861-02-01",
-        "content": null,
-        "source_id": 1
-      },
-      {
-        "title": "After several weeks of Federal occupation of Texas’ most important seaport, the Battle of Galveston restored the island to Texas control for the remainder of the Civil War.",
-        "date": "1863-01-01",
-        "content": null,
-        "source_id": 1
-      },
-      {
-        "title": "Mexican army defeats Texas at the Battle of the Alamo.",
-        "date": "1936-03-01",
-        "content": null,
-        "source_id": 1
-      },
-      {
-        "title": "Texans defeat the Mexican army at the Battle of San Jacinto to win independence.",
-        "date": "1936-04-01",
-        "content": null,
-        "source_id": 1
-      },
-      {
-        "title": "The Texas Congress meet in Austin, the frontier site selected for the capital of the Republic.",
-        "date": "1839-11-01",
-        "content": null,
-        "source_id": 1
-      },
-      {
-        "title": "Texas admitted to the Union as the 28th state.",
-        "date": "1845-12-01",
-        "content": null,
-        "source_id": 1
-      },
-      {
-        "title": "Texas seceded from the Union then readmitted on March 30, 1870.",
-        "date": "1861-02-01",
-        "content": null,
-        "source_id": 1
-      },
-      {
-        "title": "The University of Texas opened its doors in Austin for its inaugural session. First courses were offered in the Academic Department and a Law Department.",
-        "date": "1883-09-15",
-        "content": null,
-        "source_id": 1
-      },
-      {
-        "title": "Based on a campaign platform calling for the regulation of railroads and big business, James Hogg too",
-        "date": "1891-01-20",
-        "content": null,
-        "source_id": 1
-      }
-    ]
-  }
+  "sources": [
+    {
+      "id": 1,
+      "name": "TexasProud.com",
+      "url": "https://texasproud.com/early-texas-history-timeline/"
+    }
+  ],
+  "events": [
+    {
+      "title": "Prior to the arrival of the first European explorers, numerous tribes of the Indians of Texas occupied the region between the Rio Grande to the south and the Red River to the north.",
+      "date": "1500-01-01",
+      "end_date": null,
+      "content": null,
+      "source_id": 1
+    },
+    {
+      "title": "Alonso Alvarez de Pineda, a Spanish adventurer, sailed from a base in Jamaica to become the first known European to explore and map the Texas coastline.",
+      "date": "1519-01-01",
+      "end_date": null,
+      "content": null,
+      "source_id": 1
+    },
+    {
+      "title": "Cabeza de Vaca shipwrecked on what is believed today to be Galveston Island. After trading in the region for some six years, he later explored the Texas interior on his way to Mexico.",
+      "date": "1528-11-01",
+      "end_date": null,
+      "content": null,
+      "source_id": 1
+    },
+    {
+      "title": "In search of the fabled Seven Cities of Cibola, Francisco Vasquez de Coronado led an expedition into the present southwestern United States and across northern Texas.",
+      "date": "1540-01-01",
+      "end_date": "1542-01-01",
+      "content": null,
+      "source_id": 1
+    },
+    {
+      "title": "Robert Cavelier, Sieur de LaSalle established Fort St. Louis at Matagorda Bay, and formed the basis for France's claim to Texas. Two years later, LaSalle was murdered by his own men.",
+      "date": "1685-02-18",
+      "end_date": null,
+      "content": null,
+      "source_id": 1
+    },
+    {
+      "title": "During an expedition planned to reestablish Spanish presence in Texas, Mexican explorer Alonso de Leon reached Fort St. Louis and found it abandoned. The fort was originally was established in 1685 by explorer Robert Cavelier de La Salle during the French colonization of Texas. ",
+      "date": "1689-04-22",
+      "end_date": null,
+      "content": null,
+      "source_id": 1
+    },
+    {
+      "title": "Throughout the 18th century, Spain established Catholic missions across Texas including as well as the towns of San Antonio, Goliad, and Nacogdoches.  One of the missions, San Antonio de Valero later became The Alamo.",
+      "date": "1716-01-01",
+      "end_date": "1789-01-01",
+      "content": null,
+      "source_id": 1
+    },
+    {
+      "title": "The Gutierrez-Magee Expedition with about 130 men, crossed the Sabine River from Louisiana in a rebel movement against Spanish rule in Texas.",
+      "date": "1812-08-08",
+      "end_date": null,
+      "content": null,
+      "source_id": 1
+    },
+    {
+      "title": "Jean Laffite occupied Galveston Island and used it as a base for his smuggling and privateering operation.",
+      "date": "1817-01-01",
+      "end_date": "1820-01-01",
+      "content": null,
+      "source_id": 1
+    },
+    {
+      "title": " Stephen F. Austin received a grant from the Mexican government to lead roughly 300 families to the Brazos River to begin colonization in the region.",
+      "date": "1823-01-03",
+      "end_date": null,
+      "content": null,
+      "source_id": 1
+    },
+    {
+      "title": "The Constitution of 1824 gave Mexico a republican form of government. It failed, however, to define the rights of the states within the republic, including Texas.",
+      "date": "1824-01-01",
+      "end_date": null,
+      "content": null,
+      "source_id": 1
+    },
+    {
+      "title": "Relations between the Texans and Mexico reached a new low when Mexico forbid further emigration into Texas by settlers from the United States.",
+      "date": "1830-04-06",
+      "end_date": null,
+      "content": null,
+      "source_id": 1
+    },
+    {
+      "title": "The Battle of Velasco resulted in the first casualties in Texas' relations with Mexico. After several days of fighting, the Mexicans under Domingo de Ugartechea were forced to surrender for lack of ammunition.",
+      "date": "1832-06-26",
+      "end_date": null,
+      "content": null,
+      "source_id": 1
+    },
+    {
+      "title": "Dissatisfaction with the government policies in Mexico City triggered the Convention of 1832 and the Convention of 1833 in Texas.",
+      "date": "1832-01-01",
+      "end_date": "1833-01-01",
+      "content": null,
+      "source_id": 1
+    },
+    {
+      "title": "Texans drove back troops of the Mexican cavalry at the Battle of Gonzales. The revolution began.",
+      "date": "1835-10-02",
+      "end_date": null,
+      "content": null,
+      "source_id": 1
+    },
+    {
+      "title": "The Goliad Campaign of 1835 ended when George Collingsworth, Ben Milam, and forty-nine other Texans stormed the presidio at Goliad and a small troop of Mexican defenders.",
+      "date": "1835-10-09",
+      "end_date": null,
+      "content": null,
+      "source_id": 1
+    },
+    {
+      "title": "Jim Bowie, James Fannin, and 90 Texans defeated 450 Mexicans at the Battle of Concepcion, near San Antonio.",
+      "date": "1835-10-28",
+      "end_date": null,
+      "content": null,
+      "source_id": 1
+    },
+    {
+      "title": "The Consultation met to consider options for the more autonomous rule for Texas. A document known as the Organic Law outlined the organization and functions of a new Provisional Government.",
+      "date": "1835-11-03",
+      "end_date": null,
+      "content": null,
+      "source_id": 1
+    },
+    {
+      "title": "The Grass Fight near San Antonio was won by the Texans under Jim Bowie and Ed Burleson. Instead of silver, however, the Texans gained a worthless bounty of grass.",
+      "date": "1835-11-08",
+      "end_date": null,
+      "content": null,
+      "source_id": 1
+    },
+    {
+      "title": "Mexicans under Gen. Cos surrendered San Antonio to the Texans following the Siege of Bexar. Ben Milam was killed during the extended siege.",
+      "date": "1835-12-11",
+      "end_date": null,
+      "content": null,
+      "source_id": 1
+    },
+    {
+      "title": "The Texas Declaration of Independence was signed by members of the Convention of 1836. An ad interim government was formed for the newly created Republic of Texas.",
+      "date": "1836-03-02",
+      "end_date": null,
+      "content": null,
+      "source_id": 1
+    },
+    {
+      "title": "Texans under Col. William B. Travis were overwhelmed by the Mexican army after a two-week siege at the Battle of the Alamo in San Antonio. The Runaway Scrape began.",
+      "date": "1836-03-06",
+      "end_date": null,
+      "content": null,
+      "source_id": 1
+    },
+    {
+      "title": "Sam Houston abandoned Gonzales in a general retreat eastward to avoid the invading Mexican army.",
+      "date": "1836-03-10",
+      "end_date": null,
+      "content": null,
+      "source_id": 1
+    },
+    {
+      "title": "James Fannin and nearly 400 Texans were executed by the Mexicans at the Goliad Massacre, under the order of Santa Anna.",
+      "date": "1836-03-27",
+      "end_date": null,
+      "content": null,
+      "source_id": 1
+    },
+    {
+      "title": "In what may be the most important event in Texas history, Texans under Sam Houston routed the Mexican forces of Santa Anna at the Battle of San Jacinto. Thus, independence was won in one of the most decisive battles in history.",
+      "date": "1836-04-21",
+      "end_date": null,
+      "content": null,
+      "source_id": 1
+    },
+    {
+      "title": "The Texas Congress first met in Austin, the frontier site selected for the capital of the Republic.",
+      "date": "1839-11-01",
+      "end_date": null,
+      "content": null,
+      "source_id": 1
+    },
+    {
+      "title": "The Battle of Plum Creek, near present-day Lockhart, ended the boldest and most penetrating Comanche challenge to the Texas Republic.",
+      "date": "1840-08-11",
+      "end_date": null,
+      "content": null,
+      "source_id": 1
+    },
+    {
+      "title": "The Texan Santa Fe Expedition set out for New Mexico. Near Sante Fe, they were intercepted by Mexican forces and marched 2000 miles to prison in Mexico City.",
+      "date": "1841-06-01",
+      "end_date": null,
+      "content": null,
+      "source_id": 1
+    },
+    {
+      "title": "A Mexican force of over 500 men under Rafael Vasquez invaded Texas for the first time since the revolution. They briefly occupied San Antonio but soon headed back to the Rio Grande.",
+      "date": "1842-03-05",
+      "end_date": null,
+      "content": null,
+      "source_id": 1
+    },
+    {
+      "title": "San Antonio was again captured, this time by 1400 Mexican troops under Adrian Woll. Again, the Mexicans retreated, but this time with prisoners.",
+      "date": "1842-09-11",
+      "end_date": null,
+      "content": null,
+      "source_id": 1
+    },
+    {
+      "title": "Sam Houston authorized Alexander Somervell to lead a retaliatory raid into Mexico. The resulting Somervell Expedition dissolved, however, after briefly taking the border towns of Laredo and Guerreo.",
+      "date": "1842-01-01",
+      "end_date": null,
+      "content": null,
+      "source_id": 1
+    },
+    {
+      "title": "Some 300 members of the Somervell force set out to continue raids into Mexico. Ten days and 20 miles later, the ill-fated Mier Expedition surrendered at the Mexican town of Mier.",
+      "date": "1842-12-20",
+      "end_date": null,
+      "content": null,
+      "source_id": 1
+    },
+    {
+      "title": "Under orders of Sam Houston, officials arrived in Austin to remove the records of the Republic of Texas to the city of Houston, touching off the bloodless Archives War.",
+      "date": "1842-12-29",
+      "end_date": null,
+      "content": null,
+      "source_id": 1
+    },
+    {
+      "title": "Seventeen Texans were executed in what became known as the Black Bean Episode, which resulted from the Mier Expedition, one of several raids by the Texans into Mexico.",
+      "date": "1843-03-25",
+      "end_date": null,
+      "content": null,
+      "source_id": 1
+    },
+    {
+      "title": "The Texan's Snively Expedition reached the Santa Fe Trail, expecting to capture Mexican wagons crossing territory claimed by Texas. The campaign stalled, however, when American troops intervened.",
+      "date": "1843-05-27",
+      "end_date": null,
+      "content": null,
+      "source_id": 1
+    },
+    {
+      "title": "U. S. President James Polk followed through on a campaign platform promising to annex Texas and signed legislation making Texas the 28th state of the United States.",
+      "date": "1845-12-29",
+      "end_date": null,
+      "content": null,
+      "source_id": 1
+    },
+    {
+      "title": "The Mexican-American War ignited as a result of disputes over claims to Texas boundaries. The outcome of the war fixed Texas' southern boundary at the Rio Grande River.",
+      "date": "1846-04-25",
+      "end_date": null,
+      "content": null,
+      "source_id": 1
+    },
+    {
+      "title": "In a plan to settle boundary disputes and pay her public debt, Texas relinquished about one-third of her territory in the Compromise of 1850, in exchange for $10,000,000 from the United States.",
+      "date": "1850-11-25",
+      "end_date": null,
+      "content": null,
+      "source_id": 1
+    },
+    {
+      "title": "The first Lone Star State Fair in Corpus Christi symbolized a period of relative prosperity in Texas during the 1850s. Organizer Henry L. Kinney persuaded Dr. Ashbel Smith to be the fair's manager.",
+      "date": "1852-05-01",
+      "end_date": null,
+      "content": null,
+      "source_id": 1
+    },
+    {
+      "title": "Backed by the US military, a shipment of 32 camels arrived at the port of Indianola. The resulting Texas Camel Experiment used the animals to transport supplies over the “Great American Desert.”",
+      "date": "1856-04-29",
+      "end_date": null,
+      "content": null,
+      "source_id": 1
+    },
+    {
+      "title": "Texas seceded from the Federal Union following a 171 to 6 vote by the Secession Convention. Governor Sam Houston was one of a small minority opposed to secession.",
+      "date": "1861-02-01",
+      "end_date": null,
+      "content": null,
+      "source_id": 1
+    },
+    {
+      "title": "Advance units of the newly formed Brigade of General H. H. Sibley marched westward from San Antonio to claim New Mexico and the American southwest for the Confederacy.",
+      "date": "1861-10-22",
+      "end_date": null,
+      "content": null,
+      "source_id": 1
+    },
+    {
+      "title": "After several weeks of Federal occupation of Texas' most important seaport, the Battle of Galveston restored the island to Texas control for the remainder of the Civil War.",
+      "date": "1863-01-01",
+      "end_date": null,
+      "content": null,
+      "source_id": 1
+    },
+    {
+      "title": "The last land engagement of the Civil War was fought at the Battle of Palmito Ranch in far south Texas, more than a month after Gen. Lee's surrender at Appomattox, VA.",
+      "date": "1865-05-13",
+      "end_date": null,
+      "content": null,
+      "source_id": 1
+    },
+    {
+      "title": "The abundance of longhorn cattle in south Texas and the return of Confederate soldiers to a poor reconstruction economy marked the beginning of the era of Texas trail drives to northern markets.",
+      "date": "1866-01-01",
+      "end_date": null,
+      "content": null,
+      "source_id": 1
+    },
+    {
+      "title": "The United States Congress readmitted Texas into the Union. Reconstruction continued, however, for another four years.",
+      "date": "1870-03-30",
+      "end_date": null,
+      "content": null,
+      "source_id": 1
+    },
+    {
+      "title": "Coke-Davis Dispute ended peacefully in Austin as E. J. Davis relinquished the governor's office. Richard Coke began a democratic party dynasty in Texas that continued unbroken for over 100 years.",
+      "date": "1874-01-17",
+      "end_date": null,
+      "content": null,
+      "source_id": 1
+    },
+    {
+      "title": "Now known as Texas A&M, the opening of the Agricultural and Mechanical College of Texas marked the state's first venture into public higher education. Tuition totaled $10 per semester.",
+      "date": "1876-10-04",
+      "end_date": null,
+      "content": null,
+      "source_id": 1
+    },
+    {
+      "title": "The University of Texas opened its doors in Austin for its inaugural session. First courses were offered in the Academic Department and a Law Department.",
+      "date": "1883-09-15",
+      "end_date": null,
+      "content": null,
+      "source_id": 1
+    },
+    {
+      "title": "The dedication of the present state capital in Austin ended seven years of planning and construction. The building was funded with 3,000,000 acres of land in north Texas.",
+      "date": "1888-05-16",
+      "end_date": null,
+      "content": null,
+      "source_id": 1
+    },
+    {
+      "title": "Based on a campaign platform calling for the regulation of railroads and big business, James Hogg took office as the first native-born governor of Texas.",
+      "date": "1891-01-20",
+      "end_date": null,
+      "content": null,
+      "source_id": 1
+    },
+    {
+      "title": "The discovery of “black gold” at the Spindletop oil field near Beaumont launched Texas into a century of oil exploration, electronics, and manned space travel.",
+      "date": "1901-01-10",
+      "end_date": null,
+      "content": null,
+      "source_id": 1
+    }
+  ]
+}
