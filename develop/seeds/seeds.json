@@ -1,0 +1,131 @@
+{
+  "sources": [
+    {
+      "id": 1,
+      "name": "TexasProud.com",
+      "url": "https://texasproud.com/the-10-most-significant-events-in-texas-history/"
+    }
+  ],
+  "events": [
+    {
+      "title": "Texas coastline first explored and mapped by Alonso Alvarez de Pineda.",
+      "date": "1519-01-01",
+      "content": null,
+      "source_id": 1
+    },
+    {
+      "title": "Stephen F. Austin received grant from the Mexican government to colonize Texas along the Brazos River.",
+      "date": "1823-01-01",
+      "content": null,
+      "source_id": 1
+    },
+    {
+      "title": "Convention of 1832 to discuss dissatisfaction with the policies by the Mexican government.",
+      "date": "1832-10-01",
+      "content": null,
+      "source_id": 1
+    },
+    {
+      "title": "The Texas revolution began with the Battle of Gonzales",
+      "date": "1835-10-01",
+      "content": null,
+      "source_id": 1
+    },
+    {
+      "title": "The Grass Fight near San Antonio was won by the Texans under Jim Bowie and Ed Burleson. Instead of silver, however, the Texans gained a worthless bounty of grass.",
+      "date": "1835-11-08",
+      "content": null,
+      "source_id": 1
+    },
+    {
+      "title": "The Texas Declaration of Independence signed by members of the Convention of 1836",
+      "date": "1836-03-01",
+      "content": null,
+      "source_id": 1
+    },
+    {
+      "title": "Texans under Col. William B. Travis were overwhelmed by the Mexican army after a two-week siege at the Battle of the Alamo in San Antonio. The Runaway Scrape began.",
+      "date": "1836-03-06",
+      "content": null,
+      "source_id": 1
+    },
+    {
+      "title": "Sam Houston abandoned Gonzales in a general retreat eastward to avoid the invading Mexican army.",
+      "date": "1836-03-10",
+      "content": null,
+      "source_id": 1
+    },
+    {
+      "title": "In what may be the most important event in Texas history, Texans under Sam Houston routed the Mexican forces of Santa Anna at the Battle of San Jacinto. Thus, independence was won in one of the most decisive battles in history.",
+      "date": "1836-04-21",
+      "content": null,
+      "source_id": 1
+    },
+    {
+      "title": "The Texas Congress first met in Austin, the frontier site selected for the capital of the Republic.",
+      "date": "1839-11-01",
+      "content": null,
+      "source_id": 1
+    },
+    {
+      "title": "U.S. President James Polk followed through on a campaign platform promising to annex Texas and signed legislation making Texas the 28th state of the United States.",
+      "date": "1845-12-29",
+      "content": null,
+      "source_id": 1
+    },
+    {
+      "title": "Texas seceded from the Federal Union following a 171 to 6 vote by the Secession Convention. Governor Sam Houston was one of a small minority opposed to secession.",
+      "date": "1861-02-01",
+      "content": null,
+      "source_id": 1
+    },
+    {
+      "title": "After several weeks of Federal occupation of Texas’ most important seaport, the Battle of Galveston restored the island to Texas control for the remainder of the Civil War.",
+      "date": "1863-01-01",
+      "content": null,
+      "source_id": 1
+    },
+    {
+      "title": "Mexican army defeats Texas at the Battle of the Alamo.",
+      "date": "1936-03-01",
+      "content": null,
+      "source_id": 1
+    },
+    {
+      "title": "Texans defeat the Mexican army at the Battle of San Jacinto to win independence.",
+      "date": "1936-04-01",
+      "content": null,
+      "source_id": 1
+    },
+    {
+      "title": "The Texas Congress meet in Austin, the frontier site selected for the capital of the Republic.",
+      "date": "1839-11-01",
+      "content": null,
+      "source_id": 1
+    },
+    {
+      "title": "Texas admitted to the Union as the 28th state.",
+      "date": "1845-12-01",
+      "content": null,
+      "source_id": 1
+    },
+    {
+      "title": "Texas seceded from the Union then readmitted on March 30, 1870.",
+      "date": "1861-02-01",
+      "content": null,
+      "source_id": 1
+    },
+    {
+      "title": "The University of Texas opened its doors in Austin for its inaugural session. First courses were offered in the Academic Department and a Law Department.",
+      "date": "1883-09-15",
+      "content": null,
+      "source_id": 1
+    },
+    {
+      "title": "Based on a campaign platform calling for the regulation of railroads and big business, James Hogg took office as the first native-born governor of Texas.",
+      "date": "1891-01-20",
+      "content": null,
+      "source_id": 1
+    }
+  ]
+}
