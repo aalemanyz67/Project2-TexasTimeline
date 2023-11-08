@@ -68,6 +68,7 @@ User.findOne({
   }
 
   req.session.save(() => {
+    console.log("user logged in");
     req.session.loggedIn = true;
     res
       .status(200)
