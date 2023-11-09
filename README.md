@@ -37,7 +37,15 @@ This application is a wonderful educational tool that can be used accross variou
 
  # Screenshots
  Inital collaboration and design of our web application.
- ![design of app](<public/images/database diagram.png>)
+ <br>![Alt text](<public/images/design template.png>)<br>
+
+ Diagram of the database.
+<br>![Alt text](<public/images/database diagram.png>)<br>
+
+ Texas Timeline sign up/login demo
+ ![Alt text](public/images/texaswelcome.webp)
+
+
  # Collaborators and Resources
  Github Collaborator Repositories:
 <br>Fernando Valle:https://github.com/elmfer (Helped with Backend)<br>
