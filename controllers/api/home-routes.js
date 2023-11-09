@@ -2,53 +2,23 @@ const router = require('express').Router();
 const {Event, Source} = require('../../models');
 const withAuth = require('../../utils/auth');
 
-router.get('/', withAuth, async (req, res) => {
+router.get('/', async (req, res) => {
     try {
 
         const dbEventData = await  Event.findAll({
-          include: [
-
-            {
-              model: Source,
-              as: 'source'
-            }
-          ],
-         });  
+          include: [{
+            model: Source,
+            attributes: ['id'], as:'source'
+          }],
+          logging: console.log, // This will log the SQL query
+        });
 
          const events = dbEventData.map((event) =>
           event.get({plain: true})
 
          );
       res.render('homepage', {
-        events,
-        loggedIn: req.session.loggedIn
-      
-      });
-    } catch (err) {
-      console.log(err);
-      res.status(500).json(err);
-    }
-  });
-  router.get('/event', withAuth, async (req, res) => {
-    try {
-
-        const dbEventData = await  Event.findAll({
-          include: [
-
-            {
-              model: Source,
-              attributes: ['title', 'content']
-            }
-          ],
-         });  
-
-         const events = dbEventData.map((event) =>
-          event.get({plain: true})
-
-         );
-      res.render('timeline', {
-        events,
-        loggedIn: req.session.loggedIn
+        layout: 'main'
       
       });
     } catch (err) {
@@ -62,7 +32,7 @@ router.get('/', withAuth, async (req, res) => {
       return;
     }
   
-    res.render('login');
+    res.render('login', { layout: 'main' });
   });
   
   module.exports = router ;
