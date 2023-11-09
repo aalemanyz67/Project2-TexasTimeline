@@ -27,20 +27,26 @@ router.get('/:id', withAuth, (req, res) => {
       res.status(500).json({ error: 'An error occurred while retrieving user.', details: err.message });
     });
 });
+
 // CREATE a user
 router.post('/', (req, res) => {
-  User.create({ username: req.body.username, email: req.body.email, password: req.body.password, is_admin: req.body.admin })
+  User.create({ username: req.body.username, password: req.body.password, is_admin: req.body.admin })
   .then((user) => {
-    req.session.save(() => {
+    req.session.save((err) => {
+      if (err) {
+        console.log(err);
+        return res.status(500).json(err);
+      }
       req.session.loggedIn = true;
-      res.status(200).json(user)
-    })
+      res.status(200).json(user);
+    });
   })
   .catch((err) => {
     console.log(err);
     res.status(400).json(err);
   });
 });
+
 
 // Login
 router.post('/login', (req, res) => {

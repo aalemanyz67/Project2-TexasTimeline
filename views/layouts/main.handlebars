@@ -16,9 +16,8 @@
     
   </header>
   <nav>
-    <a href="/">Home</a>
     {{#if loggedIn}} 
-    <a href="/logout">Logout</a>
+    <a id="logout">Logout</a>
     {{else}}
     <a href="/login">Login</a>
     {{/if}}
@@ -28,14 +27,16 @@
       <h2>"You may all go to hell, and I will go to Texas" --Davy Crockett</h2>
     </aside>
     <section class="timeline-card">
-    <iframe src='https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=1D0m893M2wtgmfm8nNHBSESY4TxrtO7VvW-DHs345wSA&font=Bitter-Raleway&lang=en&timenav_position=top&initial_zoom=2&height=650' width='500%'' height='650' webkitallowfullscreen mozallowfullscreen allowfullscreen frameborder='0'></iframe>
+    <iframe src='https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=1D0m893M2wtgmfm8nNHBSESY4TxrtO7VvW-DHs345wSA&font=Bitter-Raleway&lang=en&timenav_position=top&initial_zoom=2&height=650' width='500%' height='650' webkitallowfullscreen mozallowfullscreen allowfullscreen frameborder='0'></iframe>
 </section>
       {{{body}}}
     </div>
   </main>
-  {{^loggedIn}} 
-<script src="/js/login.js"></script>
-{{/loggedIn}}
+  {{#if loggedIn}}
+  <script src="/js/logout.js"></script>
+  {{else}}
+  <script src="/js/login.js"></script>
+  {{/if}}
   {{footer}}
 </body>
 

@@ -6,7 +6,7 @@ Heroku Deployed Link:
 Github Collaborator Repositories:
 <br>Fernando Valle:https://github.com/elmfer<br>
 <br>Jessica Linex:https://github.com/jlinex<br>
-<br>Billy Finch:https://github.com/jlinex<br>
+<br>Billy Finch:https://github.com/bfinch3<br>
 <br>Albert Aleman:https://github.com/aalemanyz67<br>
 
 # Objective:
@@ -50,7 +50,7 @@ This application is a wonderful educational tool that can be used accross variou
  Github Collaborator Repositories:
 <br>Fernando Valle:https://github.com/elmfer (Helped with Backend)<br>
 <br>Jessica Linex:https://github.com/jlinex (Helped with Frontend)<br>
-<br>Billy Finch:https://github.com/jlinex (Helped with Backend)<br>
+<br>Billy Finch:https://github.com/bfinch3 (Helped with Backend)<br>
 <br>Albert Aleman:https://github.com/aalemanyz67 (Helped with Frontend)<br>
 
 # Resources

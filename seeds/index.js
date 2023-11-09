@@ -77,7 +77,6 @@ async function createAdmin() {
     load = loading("Creating admin user").start();
     await User.create({
       username: 'Admin',
-      email: 'admin@admin.com',
       password: password,
       is_admin: true
     });
