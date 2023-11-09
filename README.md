@@ -43,7 +43,7 @@ This application is a wonderful educational tool that can be used accross variou
 <br>![Alt text](<public/images/database diagram.png>)<br>
 
  Texas Timeline sign up/login demo
- ![Alt text](public/images/texaswelcome.webp)
+ ![Alt text](public/images/demo.gif)
 
 
  # Collaborators and Resources
