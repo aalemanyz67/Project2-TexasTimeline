@@ -1,8 +1,6 @@
 const router = require('express').Router();
 const { Event, Source } = require('../../models');
 
-
-
 // /api/event
 router.get('/', (req, res) => {
   Event.findAll({

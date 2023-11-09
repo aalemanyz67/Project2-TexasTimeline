@@ -17,7 +17,7 @@
   </header>
   <nav>
     <a href="/">Home</a>
-    {{#if loggedIn}}
+    {{#if loggedIn}} 
     <button id="logout" class="btn-no-style ">Logout</button>
     {{else}}
     <a href="/public/js/login.js">Login</a>
@@ -27,11 +27,14 @@
     <aside>
       <h2>"You may all go to hell, and I will go to Texas" --Davy Crockett</h2>
     </aside>
-    <div class="timeline">
-      {{{body}}}
+    <section class="timeline-card">
+    <iframe src='https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=1D0m893M2wtgmfm8nNHBSESY4TxrtO7VvW-DHs345wSA&font=Bitter-Raleway&lang=en&timenav_position=top&initial_zoom=2&height=650' width='500%'' height='650' webkitallowfullscreen mozallowfullscreen allowfullscreen frameborder='0'></iframe>
+</section>
+
+      {{!-- {{{body}}} --}}
     </div>
   </main>
-  {{#if loggedIn}}
+   {{#if loggedIn}} 
   <script src="/public/js/logout.js"></script>
   {{/if}}
   {{footer}}
