@@ -7,13 +7,13 @@ const loginFormHandler = async (event) => {
 
   event.preventDefault();
 
-  const email = document.querySelector('#email-login').value.trim();
+  const username = document.querySelector('#username-login').value.trim();
   const password = document.querySelector('#password-login').value.trim();
 
-  if (email && password) {
+  if (username && password) {
     const response = await fetch('/api/user/login', {
       method: 'POST',
-      body: JSON.stringify({ username, password, "is_admin":false }),
+      body: JSON.stringify({ username, password, "is_admin": false }),
       headers: { 'Content-Type': 'application/json' },
     });
 
@@ -37,7 +37,7 @@ const is_admin = false;
   if (username && email && password) {
     const response = await fetch('/api/user', {
       method: 'POST',
-      body: JSON.stringify({ username, password, is_admin }),
+      body: JSON.stringify({ username, email, password, is_admin }),
       headers: { 'Content-Type': 'application/json' },
     });
 

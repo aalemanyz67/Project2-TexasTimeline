@@ -29,16 +29,16 @@ router.get('/:id', withAuth, (req, res) => {
 });
 // CREATE a user
 router.post('/', (req, res) => {
-  User.create({ username: req.body.username, password: req.body.password, is_admin: req.body.admin })
+  User.create({ username: req.body.username, email: req.body.email, password: req.body.password, is_admin: req.body.admin })
   .then((user) => {
     req.session.save(() => {
       req.session.loggedIn = true;
       res.status(200).json(user)
     })
-      .catch((err) => {
-        console.log(err);
-        res.status(400).json(err);
-      });
+  })
+  .catch((err) => {
+    console.log(err);
+    res.status(400).json(err);
   });
 });
 
