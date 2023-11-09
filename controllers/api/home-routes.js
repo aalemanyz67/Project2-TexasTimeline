@@ -1,6 +1,6 @@
 const router = require('express').Router();
-const {Event, Source} = require('../models');
-const withAuth = require('../utils/auth');
+const {Event, Source} = require('../../models');
+const withAuth = require('../../utils/auth');
 
 router.get('/', withAuth, async (req, res) => {
     try {
@@ -10,7 +10,7 @@ router.get('/', withAuth, async (req, res) => {
 
             {
               model: Source,
-              attributes: ['title', 'content']
+              as: 'source'
             }
           ],
          });  

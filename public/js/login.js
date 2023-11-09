@@ -1,4 +1,10 @@
+async function sleep(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
+}
+
 const loginFormHandler = async (event) => {
+  console.log("loginFormHandler");
+
   event.preventDefault();
 
   const email = document.querySelector('#email-login').value.trim();
@@ -7,11 +13,13 @@ const loginFormHandler = async (event) => {
   if (email && password) {
     const response = await fetch('/api/user/login', {
       method: 'POST',
-      body: JSON.stringify({ email, password }),
+      body: JSON.stringify({ username: email, password }),
       headers: { 'Content-Type': 'application/json' },
     });
 
     if (response.ok) {
+      await sleep(1000);
+
       document.location.replace('/');
     } else {
       alert('Failed to log in.');
