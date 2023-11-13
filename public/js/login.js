@@ -7,52 +7,61 @@ const loginFormHandler = async (event) => {
 
   event.preventDefault();
 
-  const email = document.querySelector('#email-login').value.trim();
+  const username = document.querySelector('#user-login').value.trim();
   const password = document.querySelector('#password-login').value.trim();
 
-  if (email && password) {
-    const response = await fetch('/api/user/login', {
-      method: 'POST',
-      body: JSON.stringify({ username, password, "is_admin":false }),
-      headers: { 'Content-Type': 'application/json' },
-    });
+  if (username && password) {
+    try {
+      const response = await fetch('/api/user/login', {
+        method: 'POST',
+        body: JSON.stringify({ username, password }),
+        headers: { 'Content-Type': 'application/json' },
+      });
 
-    if (response.ok) {
-      await sleep(1000);
-
-      document.location.replace('/');
-    } else {
-      alert('Failed to log in.');
+      if (response.ok) {
+        await sleep(1000);
+        console.log('Redirecting to home page');
+        document.location.replace('/');
+      } else {
+        alert('Failed to log in.');
+      }
+    } catch (error) {
+      alert('An error occurred during login.');
+      console.error('Login error:', error);
     }
   }
 };
-
-const signupFormHandler = async (event) => {
+ 
+const signupFormHandler = (event) => {
   event.preventDefault();
 
   const username = document.querySelector('#username-signup').value.trim();
-  const email = document.querySelector('#email-signup').value.trim();
   const password = document.querySelector('#password-signup').value.trim();
-const is_admin = false;
-  if (username && email && password) {
-    const response = await fetch('/api/user', {
+  const is_admin = false;
+
+  if (username && password) {
+    fetch('/api/user/', {
       method: 'POST',
       body: JSON.stringify({ username, password, is_admin }),
       headers: { 'Content-Type': 'application/json' },
+    })
+    .then((response) => {
+      if (response.ok) {
+        console.log('Redirecting to home page');
+        document.location.replace('/');
+      } else {
+        throw new Error('Signup was not successful.');
+      }
+    })
+    .catch((error) => {
+      alert('Failed to sign up. Please try again.');
+      console.error('Signup error:', error);
     });
-
-    if (response.ok) {
-      document.location.replace('/');
-    } else {
-      alert('Failed to sign up.');
-    }
   }
 };
 
+document.querySelector('.signup-form').addEventListener('submit', signupFormHandler);
 document
   .querySelector('.login-form')
   .addEventListener('submit', loginFormHandler);
 
-document
-  .querySelector('.signup-form')
-  .addEventListener('submit', signupFormHandler);
