@@ -49,8 +49,6 @@ aside {
   padding: 80px;
   text-align: left;
   color: var(--light);
-  
-  
 }
 
 nav {
@@ -132,6 +130,22 @@ img {
   border-width: thick;
   background-color: rgb(108, 143, 204);
   color: var(--light);
+}
+
+#user-login {
+  background-color: white;
+}
+
+#password-login {
+    background-color: white;
+}
+
+#username-signup {
+  background-color: white;
+}
+
+#password-signup {
+  background-color: white;
 }
 
 .card header {
