@@ -33,7 +33,7 @@ router.get('/:id', (req, res) => {
 
 // CREATE a comment
 router.post('/', withAuth, (req, res) => {
-    User.findOne({
+    comment.findOne({
         where: { username: req.body.username }
     })
         .then((user) => {

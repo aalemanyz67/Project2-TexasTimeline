@@ -45,7 +45,8 @@ This application is a wonderful educational tool that can be used accross variou
  Texas Timeline sign up/login demo
  ![Alt text](public/images/demo.gif)
 
-
+![Alt text](image.png)
+ 
  # Collaborators and Resources
  Github Collaborator Repositories:
 <br>Fernando Valle:https://github.com/elmfer (Helped with Backend)<br>
